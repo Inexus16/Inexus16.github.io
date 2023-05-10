@@ -563,7 +563,8 @@
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input id="name" type="name" class="form-control" placeholder="Your Name">
+                                       <!-- <input type="text" class="form-control" id="name" placeholder="Your Name"> -->
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
@@ -591,12 +592,12 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Special Request" id="message" name="message" type="message" style="height: 100px"></textarea>
                                         <label for="message">Special Request</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                    <button class="btn btn-primary w-100 py-3" name="submit" id="submit" type="submit" onclick="myFunction()">Book Now</button>
                                 </div>
                             </div>
                         </form>
